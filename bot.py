@@ -41,7 +41,7 @@ log = logging.getLogger(__name__)
 # ──────────────────────────────────────────────────────────────
 # WB API
 # ──────────────────────────────────────────────────────────────
-WB_BASE = "https://statistics-api.wildberries.ru/api/v5/supplier"
+WB_BASE = "https://statistics-api.wildberries.ru/api/v1/supplier"
 
 def wb_headers():
     return {"Authorization": f"Bearer {WB_API_KEY}"}

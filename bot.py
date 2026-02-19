@@ -44,7 +44,7 @@ log = logging.getLogger(__name__)
 WB_BASE = "https://statistics-api.wildberries.ru/api/v5/supplier"
 
 def wb_headers():
-    return {"Authorization": WB_API_KEY}
+    return {"Authorization": f"Bearer {WB_API_KEY}"}
 
 def get_report(date_from: str, date_to: str) -> list[dict]:
     """Получить финансовый отчёт за период."""
